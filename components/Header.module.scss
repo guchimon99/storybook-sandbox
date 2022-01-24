@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+
+  &__brand {
+    display: block;
+    flex-grow: 1;
+    text-decoration: none;
+  }
+
+  &__locale {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__localeItem {
+    display: block;
+  }
+
+  &__localeItemLink {
+    text-decoration: none;
+  }
+}

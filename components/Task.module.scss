@@ -1,0 +1,21 @@
+.task {
+  display: flex;
+  font-weight: bold;
+  gap: 1rem;
+  border-bottom: solid 0.1rem lightgray;
+
+  &__name {
+    flex-grow: 1;
+    padding: 0.3rem 0;
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  &__checkbox, &__star {
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.25rem;
+  }
+}
