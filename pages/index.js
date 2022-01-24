@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { FormattedMessage } from 'react-intl'
+import { FormattedMessage, useIntl } from 'react-intl'
 
 export default function Home() {
+  const intl = useIntl()
+
   return (
     <>
       <Head>
-        <title>
-          <FormattedMessage id="hello_world" />
-        </title>
+        <title>{intl.formatMessage({ id: "hello_world" })}</title>
       </Head>
       <h1>
         <FormattedMessage id="hello_world" />
@@ -30,6 +30,5 @@ export default function Home() {
         </li>
       </ul>
     </>
-
   )
 }

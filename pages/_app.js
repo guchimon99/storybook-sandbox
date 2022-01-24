@@ -1,8 +1,9 @@
-import { IntlProvider } from 'react-intl'
 import { useRouter } from 'next/router'
+import { IntlProvider } from 'react-intl'
+
 import locales from '../contents/locales'
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   const { locale } = useRouter()
   const messages = locales[locale]
 
@@ -13,4 +14,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default App
